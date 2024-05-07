@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>Read more read less button</title> 
+
+</head> 
+
+<style>
+    body{
+        background-image: url(img1.jpg);
+        
+    }
+    /* style.css */
+h1 { 
+	color: green;
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+    border-radius: 30px; 
+  
+} 
+
+h3 { 
+	color: rgb(249, 10, 10); 
+	font: 25px; 
+	font-weight: 700; 
+
+} 
+div{
+    color: blueviolet;
+}
+.mybox1 { 
+	display: none; 
+} 
+
+button { 
+	padding: 10px; 
+	font-size: 20px; 
+	font-weight: 700; 
+	color: rgb(5, 14, 5); 
+	border: none; 
+	border-radius: 30px; 
+	background-color: rgb(182, 215, 182); 
+	margin-top: 20px; 
+} 
+
+div, 
+span { 
+	font-size: 20px; 
+}
+
+</style>
+<body> 
+	<h1>THE STORY OF ALZEFRED</h1> 
+	<h3> Alzefred -"the lightkeeper of the storm"</h3>
+	<div class="mybox"> 
+		<div> 
+            On my last shift as a lighthouse keeper,
+            I climbed the seventy-six spiral iron stairs and
+            two ladders tothe watch room, the number of steps
+            the same as my age. The thwomp and snare of each 
+            step laid an ominous background score. Something 
+            wasn’t right. At that very moment, Richie Tedesco 
+            was pointing a fire extinguisher at the burning 
+            electrical panel in the engine room of his boat 
+            a few miles offshore.
+        <hr>
+            The placard in the watch room read “Marge Mabrity, Lightkeeper—First lighted the depths on March 2nd,
+            1985, and hasn’t missed a night.” Already so close to forty years. I could still read the skies like a
+            book. The lighthouse smelled of aging wood, dried-out moss, and the bitter acid spritz of corrosion. But
+            out on the gallery deck, leaning against the handrails, there was the unmistakable scent of petrichor.
+            The clouds in the distance grew taller, black shading growing across their swelling bellies, with the
+            storm caps flattening under the weight of the system. I tasted the metallic hint of ozone on my tongue.
+            I felt the intensity of the pressure in my ears and on my forehead.
+			<span class="mybox1" id="mybox1id"> 
+				I know what you are thinking. Why had I even done it? For all those years. I guess finding lost things
+                was always the one thing about me that was uniquely my own. And I didn’t know if I could give it up
+                <hr>
+			</span> 
+		</div> 
+      <a href="https://memes.co.in/Uploads/Media/Jan24/Wed31/1031/a3f49a13.mp4"><button id="mybuttonid"
+                onclick="changeReadMore()"> 
+            Read More 
+        </button> </a>  
+	</div> 
+
+	<script >// script.js 
+        function changeReadMore() { 
+            const mycontent = 
+                document.getElementById('mybox1id'); 
+            const mybutton = 
+                document.getElementById('mybuttonid'); 
+        
+            if (mycontent.style.display === 'none'
+                || mycontent.style.display === '') { 
+                mycontent.style.display = 'block'; 
+                mybutton.textContent = 'Read Less'; 
+            } else { 
+                mycontent.style.display = 'none'; 
+                mybutton.textContent = 'Read More'; 
+            } 
+        }
+        </script> 
+</body> 
+
+</html>
